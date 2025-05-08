@@ -1,6 +1,7 @@
 import { bubbleSort } from './bubble_sort.js';
 import { selectionSort } from './selection_sort.js';
 import { insertionSort } from './insertion_sort.js';
+import { mergeSort } from './merge_sort.js';
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -38,4 +39,7 @@ document.getElementById('arrayOfStart').innerHTML = 'Mảng ban đầu là: '+ i
 
     renderArray(inputArray, [], false, "outputInsertionSort");
     await insertionSort([...inputArray], renderArray, delay, "outputInsertionSort", "resultInsertionSort");
+
+    renderArray(inputArray, [], false, "outputMergeSort");
+    await mergeSort([...inputArray], renderArray, delay, "outputMergeSort", "resultMergeSort");
 })();
