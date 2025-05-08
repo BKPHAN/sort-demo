@@ -32,10 +32,8 @@ h3 {
 }
 
 .button{
-    height: 35px;
-    width: 100px;
     margin-top: 10px;
-    background-color: #26baec;
-    border-radius: 5px;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
 }
